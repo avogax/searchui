@@ -6,7 +6,7 @@ const FALLBACK_GROUP_OPERATOR = 'and'
 
 const resolveOperator = (id) => OPERATORS[id] || FALLBACK_GROUP_OPERATOR
 
-const RESERVED_IDS = ['include', 'skip', 'limit', 'order']
+const RESERVED_IDS = ['include', 'skip', 'limit', 'order', 'q']
 
 const resolvePath = (id, endpoint) => {
   const known = MAP[id]
